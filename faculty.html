@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - EduGate University</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <i class="fas fa-graduation-cap"></i>
+          <span>EduGate University</span>
+        </a>
+        <div class="nav-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="courses.html" class="nav-link">Courses</a>
+          <a href="faculty.html" class="nav-link">Faculty</a>
+          <a href="contact.html" class="nav-link active">Contact</a>
+          <a href="dashboard.html" class="nav-link btn-login">Student Portal</a>
+        </div>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contact Content -->
+  <main class="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1 class="hero-title">Get In <span>Touch</span></h1>
+          <p class="hero-description">We're here to help you with any questions about admissions, programs, campus life,
+            or anything else about EduGate University.</p>
+          <div class="hero-buttons">
+            <a href="#contact-form" class="btn btn-primary">
+              <i class="fas fa-envelope"></i>
+              Send Message
+            </a>
+            <a href="#visit-campus" class="btn btn-secondary">
+              <i class="fas fa-map-marker-alt"></i>
+              Visit Campus
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="floating-card">
+            <i class="fas fa-phone"></i>
+            <h4>24/7 Support</h4>
+            <p>Always Available</p>
+          </div>
+          <div class="floating-card">
+            <i class="fas fa-clock"></i>
+            <h4>Quick Response</h4>
+            <p>Within 24 Hours</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-container">
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <h2>Contact Information</h2>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="info-content">
+                <h4>Our Campus</h4>
+                <p>123 Education Street<br>Knowledge City, KC 12345<br>United States</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <div class="info-content">
+                <h4>Phone Numbers</h4>
+                <p>Admissions: +1 (555) 123-4567<br>General: +1 (555) 123-4568<br>Emergency: +1 (555) 123-4569</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div class="info-content">
+                <h4>Email Addresses</h4>
+                <p>Admissions: admissions@edugate.edu<br>Info: info@edugate.edu<br>Support: support@edugate.edu</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <div class="info-content">
+                <h4>Office Hours</h4>
+                <p>Monday - Friday: 9:00 AM - 5:00 PM<br>Saturday: 10:00 AM - 2:00 PM<br>Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form" id="contact-form">
+            <h2>Send us a Message</h2>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <select id="subject" name="subject" class="form-control" required>
+                  <option value="">Select a subject</option>
+                  <option value="admissions">Admissions Inquiry</option>
+                  <option value="courses">Course Information</option>
+                  <option value="faculty">Faculty Contact</option>
+                  <option value="support">Technical Support</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn-send">
+                <i class="fas fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Campus Visit Section -->
+    <section id="visit-campus" class="features" style="background: var(--background-alt);">
+      <div class="container">
+        <h2 class="section-title">Visit Our Campus</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-calendar"></i>
+            </div>
+            <h3>Campus Tours</h3>
+            <p>Schedule a personalized campus tour to explore our facilities, meet students, and experience campus life.
+            </p>
+            <a href="#" class="btn-course mt-1">Schedule Tour</a>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Open House</h3>
+            <p>Join our monthly open house events to learn about programs, meet faculty, and get all your questions
+              answered.</p>
+            <a href="#" class="btn-course mt-1">View Schedule</a>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-map"></i>
+            </div>
+            <h3>Virtual Tour</h3>
+            <p>Can't visit in person? Take our virtual campus tour from the comfort of your home.</p>
+            <a href="#" class="btn-course mt-1">Start Virtual Tour</a>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-directions"></i>
+            </div>
+            <h3>Directions</h3>
+            <p>Get detailed directions to our campus with parking information and public transport options.</p>
+            <a href="#" class="btn-course mt-1">Get Directions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="announcements">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="announcement-container">
+          <div class="announcement-card">
+            <div class="announcement-icon">
+              <i class="fas fa-question-circle"></i>
+            </div>
+            <div class="announcement-content">
+              <h3>How do I apply for admission?</h3>
+              <p>You can apply online through our admissions portal. The application process includes submitting
+                academic records, test scores, and a personal statement.</p>
+            </div>
+          </div>
+          <div class="announcement-card">
+            <div class="announcement-icon">
+              <i class="fas fa-dollar-sign"></i>
+            </div>
+            <div class="announcement-content">
+              <h3>What financial aid options are available?</h3>
+              <p>We offer various financial aid options including scholarships, grants, and student loans. Contact our
+                financial aid office for personalized assistance.</p>
+            </div>
+          </div>
+          <div class="announcement-card">
+            <div class="announcement-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <div class="announcement-content">
+              <h3>Is on-campus housing available?</h3>
+              <p>Yes, we provide on-campus housing options for both undergraduate and graduate students. Housing
+                applications are processed on a first-come basis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <i class="fas fa-graduation-cap"></i>
+            <span>EduGate University</span>
+          </div>
+          <p>Shaping futures through quality education, innovation, and research since 1995.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="dashboard.html">Student Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Academic</h3>
+          <ul>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Academic Calendar</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Campus Life</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Education Street, Knowledge City</p>
+            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> info@edugate.edu</p>
+            <p><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 5:00 PM</p>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get latest updates</p>
+          <div class="newsletter">
+            <input type="email" placeholder="Enter your email">
+            <button class="btn-subscribe">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; 2024 EduGate University. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

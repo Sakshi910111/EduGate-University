@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Dashboard - EduGate University</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="nav-logo">
+          <i class="fas fa-graduation-cap"></i>
+          <span>EduGate University</span>
+        </a>
+        <div class="nav-menu">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="courses.html" class="nav-link">Courses</a>
+          <a href="faculty.html" class="nav-link">Faculty</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="index.html" class="nav-link btn-login">
+            <i class="fas fa-sign-out-alt"></i>
+            Logout
+          </a>
+        </div>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Dashboard Content -->
+  <main class="main-content">
+    <div class="container">
+      <div class="dashboard">
+        <!-- Welcome Banner -->
+        <div class="welcome-banner">
+          <div class="welcome-text">
+            <h1>Welcome back, John Doe! 👋</h1>
+            <p>Computer Science - 3rd Year | Roll No: CS2023001</p>
+          </div>
+          <div class="current-date">
+            <h3 id="currentDate">Loading...</h3>
+            <p id="currentTime"></p>
+          </div>
+        </div>
+
+        <!-- Stats Overview -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <div class="stat-info">
+              <h3>5</h3>
+              <p>Enrolled Courses</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <div class="stat-info">
+              <h3>3</h3>
+              <p>Pending Assignments</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-calendar-day"></i>
+            </div>
+            <div class="stat-info">
+              <h3>2</h3>
+              <p>Classes Today</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="stat-info">
+              <h3>85%</h3>
+              <p>Overall GPA</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Dashboard Grid -->
+        <div class="dashboard-grid">
+          <!-- Left Column -->
+          <div class="left-column">
+            <!-- Today's Schedule -->
+            <div class="dashboard-card">
+              <div class="card-header">
+                <h2><i class="fas fa-calendar-alt"></i> Today's Schedule</h2>
+                <a href="#" class="btn-view-all">View All</a>
+              </div>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <div class="schedule-time">09:00 AM</div>
+                  <div class="schedule-details">
+                    <h4>Web Development</h4>
+                    <p>Room 301 - Prof. Smith</p>
+                    <span class="due-date">Theory Class</span>
+                  </div>
+                </div>
+                <div class="schedule-item">
+                  <div class="schedule-time">11:00 AM</div>
+                  <div class="schedule-details">
+                    <h4>Database Systems</h4>
+                    <p>Room 205 - Prof. Johnson</p>
+                    <span class="due-date">Lab Session</span>
+                  </div>
+                </div>
+                <div class="schedule-item">
+                  <div class="schedule-time">02:00 PM</div>
+                  <div class="schedule-details">
+                    <h4>Project Lab</h4>
+                    <p>Computer Lab - Prof. Davis</p>
+                    <span class="due-date">Project Guidance</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Upcoming Assignments -->
+            <div class="dashboard-card">
+              <div class="card-header">
+                <h2><i class="fas fa-clipboard-list"></i> Upcoming Assignments</h2>
+                <a href="#" class="btn-view-all">View All</a>
+              </div>
+              <div class="assignments-list">
+                <div class="assignment-item urgent">
+                  <div class="assignment-info">
+                    <h4>Web Project Submission</h4>
+                    <p>Web Development - Prof. Smith</p>
+                    <span class="due-date">Due: Tomorrow, 11:59 PM</span>
+                  </div>
+                  <button class="btn-submit">Submit</button>
+                </div>
+                <div class="assignment-item">
+                  <div class="assignment-info">
+                    <h4>Database Design</h4>
+                    <p>Database Systems - Prof. Johnson</p>
+                    <span class="due-date">Due: 3 days</span>
+                  </div>
+                  <button class="btn-submit">Submit</button>
+                </div>
+                <div class="assignment-item">
+                  <div class="assignment-info">
+                    <h4>Research Paper</h4>
+                    <p>Software Engineering - Prof. Brown</p>
+                    <span class="due-date">Due: 1 week</span>
+                  </div>
+                  <button class="btn-submit">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="right-column">
+            <!-- Recent Grades -->
+            <div class="dashboard-card">
+              <div class="card-header">
+                <h2><i class="fas fa-chart-bar"></i> Recent Grades</h2>
+                <a href="#" class="btn-view-all">View All</a>
+              </div>
+              <div class="grades-list">
+                <div class="grade-item">
+                  <div class="course-name">
+                    <h4>Web Development</h4>
+                    <p>Assignment 3 - Project Work</p>
+                  </div>
+                  <div class="grade-score">A-</div>
+                </div>
+                <div class="grade-item">
+                  <div class="course-name">
+                    <h4>Database Systems</h4>
+                    <p>Midterm Exam</p>
+                  </div>
+                  <div class="grade-score">B+</div>
+                </div>
+                <div class="grade-item">
+                  <div class="course-name">
+                    <h4>Algorithms</h4>
+                    <p>Quiz 2 - Sorting Algorithms</p>
+                  </div>
+                  <div class="grade-score">A</div>
+                </div>
+                <div class="grade-item">
+                  <div class="course-name">
+                    <h4>Mathematics</h4>
+                    <p>Weekly Test</p>
+                  </div>
+                  <div class="grade-score">B</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="dashboard-card">
+              <div class="card-header">
+                <h2><i class="fas fa-bolt"></i> Quick Actions</h2>
+              </div>
+              <div class="quick-links">
+                <a href="courses.html" class="quick-link-btn">
+                  <i class="fas fa-video"></i>
+                  <span>Online Classes</span>
+                </a>
+                <a href="#" class="quick-link-btn">
+                  <i class="fas fa-file-download"></i>
+                  <span>Resources</span>
+                </a>
+                <a href="#" class="quick-link-btn">
+                  <i class="fas fa-comments"></i>
+                  <span>Discussion</span>
+                </a>
+                <a href="#" class="quick-link-btn">
+                  <i class="fas fa-cog"></i>
+                  <span>Settings</span>
+                </a>
+                <a href="#" class="quick-link-btn">
+                  <i class="fas fa-book"></i>
+                  <span>E-Library</span>
+                </a>
+                <a href="contact.html" class="quick-link-btn">
+                  <i class="fas fa-headset"></i>
+                  <span>Support</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Academic Progress -->
+            <div class="dashboard-card">
+              <div class="card-header">
+                <h2><i class="fas fa-trending-up"></i> Academic Progress</h2>
+              </div>
+              <div class="progress-section">
+                <div class="progress-item">
+                  <div class="progress-info">
+                    <span>Web Development</span>
+                    <span>85%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-info">
+                    <span>Database Systems</span>
+                    <span>78%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 78%"></div>
+                  </div>
+                </div>
+                <div class="progress-item">
+                  <div class="progress-info">
+                    <span>Algorithms</span>
+                    <span>92%</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 92%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <i class="fas fa-graduation-cap"></i>
+            <span>EduGate University</span>
+          </div>
+          <p>Shaping futures through quality education, innovation, and research since 1995.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="faculty.html">Faculty</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="dashboard.html">Student Portal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Academic</h3>
+          <ul>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Academic Calendar</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Campus Life</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Education Street, Knowledge City</p>
+            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> info@edugate.edu</p>
+            <p><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 5:00 PM</p>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get latest updates</p>
+          <div class="newsletter">
+            <input type="email" placeholder="Enter your email">
+            <button class="btn-subscribe">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; 2024 EduGate University. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

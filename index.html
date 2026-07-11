@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduGate University - Leading Education Platform</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-graduation-cap"></i>
+          <span>EduGate University</span>
+        </div>
+        <div class="nav-menu">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="courses.html" class="nav-link">Courses</a>
+          <a href="faculty.html" class="nav-link">Faculty</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a href="dashboard.html" class="nav-link btn-login">Student Portal</a>
+        </div>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">Welcome to <span>EduGate University</span></h1>
+        <p class="hero-description">Where Excellence Meets Innovation. Join our community of learners and shape your
+          future with world-class education and cutting-edge facilities.</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" onclick="location.href='dashboard.html'">
+            <i class="fas fa-sign-in-alt"></i>
+            Student Login
+          </button>
+          <button class="btn btn-secondary">
+            <i class="fas fa-book-open"></i>
+            Explore Courses
+          </button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <h3>10,000+</h3>
+            <p>Students</p>
+          </div>
+          <div class="stat">
+            <h3>200+</h3>
+            <p>Courses</p>
+          </div>
+          <div class="stat">
+            <h3>95%</h3>
+            <p>Placement Rate</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="floating-card">
+          <i class="fas fa-graduation-cap"></i>
+          <h4>Graduation Ceremony</h4>
+          <p>June 15, 2024</p>
+        </div>
+        <div class="floating-card">
+          <i class="fas fa-calendar-alt"></i>
+          <h4>Admissions Open</h4>
+          <p>Fall 2024</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">Why Choose EduGate?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3>Modern Curriculum</h3>
+          <p>Industry-relevant courses with latest technologies and teaching methodologies.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+          <h3>Expert Faculty</h3>
+          <p>Learn from experienced professors and industry professionals.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3>Career Support</h3>
+          <p>100% placement assistance with top companies and startups.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h3>Global Exposure</h3>
+          <p>International collaborations and student exchange programs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="courses">
+    <div class="container">
+      <h2 class="section-title">Popular Courses</h2>
+      <div class="courses-grid">
+        <div class="course-card">
+          <div class="course-image">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="course-content">
+            <h3>Computer Science</h3>
+            <p>B.Tech in Computer Science with AI and ML specializations</p>
+            <div class="course-meta">
+              <span><i class="fas fa-clock"></i> 4 Years</span>
+              <span><i class="fas fa-users"></i> 120 Seats</span>
+            </div>
+            <button class="btn-course">Apply Now</button>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-image">
+            <i class="fas fa-calculator"></i>
+          </div>
+          <div class="course-content">
+            <h3>Data Science</h3>
+            <p>M.Sc in Data Science and Business Analytics</p>
+            <div class="course-meta">
+              <span><i class="fas fa-clock"></i> 2 Years</span>
+              <span><i class="fas fa-users"></i> 60 Seats</span>
+            </div>
+            <button class="btn-course">Apply Now</button>
+          </div>
+        </div>
+        <div class="course-card">
+          <div class="course-image">
+            <i class="fas fa-briefcase-medical"></i>
+          </div>
+          <div class="course-content">
+            <h3>MBA</h3>
+            <p>Master of Business Administration with various specializations</p>
+            <div class="course-meta">
+              <span><i class="fas fa-clock"></i> 2 Years</span>
+              <span><i class="fas fa-users"></i> 180 Seats</span>
+            </div>
+            <button class="btn-course">Apply Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Announcements -->
+  <section class="announcements">
+    <div class="container">
+      <h2 class="section-title">Latest Announcements</h2>
+      <div class="announcement-container">
+        <div class="announcement-card important">
+          <div class="announcement-icon">
+            <i class="fas fa-exclamation-circle"></i>
+          </div>
+          <div class="announcement-content">
+            <h3>Mid-Term Examinations</h3>
+            <p>Schedule for mid-term examinations has been released. Check your student portal for details.</p>
+            <span class="announcement-date">Posted: March 15, 2024</span>
+          </div>
+        </div>
+        <div class="announcement-card">
+          <div class="announcement-icon">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <div class="announcement-content">
+            <h3>Summer Internship Program</h3>
+            <p>Applications are open for summer internship program with industry partners.</p>
+            <span class="announcement-date">Posted: March 12, 2024</span>
+          </div>
+        </div>
+        <div class="announcement-card">
+          <div class="announcement-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="announcement-content">
+            <h3>Sports Week 2024</h3>
+            <p>Annual sports week scheduled from April 1-7, 2024. Register now!</p>
+            <span class="announcement-date">Posted: March 10, 2024</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <i class="fas fa-graduation-cap"></i>
+            <span>EduGate University</span>
+          </div>
+          <p>Shaping futures through quality education, innovation, and research since 1995.</p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/courses">Courses</a></li>
+            <li><a href="/faculty">Faculty</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Academic</h3>
+          <ul>
+            <li><a href="#">Admissions</a></li>
+            <li><a href="#">Academic Calendar</a></li>
+            <li><a href="#">Library</a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Campus Life</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <div class="contact-info">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Education Street, Knowledge City</p>
+            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+            <p><i class="fas fa-envelope"></i> info@edugate.edu</p>
+            <p><i class="fas fa-clock"></i> Mon-Fri: 9:00 AM - 5:00 PM</p>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get latest updates</p>
+          <div class="newsletter">
+            <input type="email" placeholder="Enter your email">
+            <button class="btn-subscribe">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-content">
+          <p>&copy; 2024 EduGate University. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
